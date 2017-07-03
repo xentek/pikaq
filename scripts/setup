@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+set -e
+
+# This script assumes you already have a proper go environment set up.
+
+if which glide > /dev/null; then
+  echo "glide already installed"
+else
+  go get -v github.com/Masterminds/glide
+fi
+
+if which golint > /dev/null; then
+  echo "golint alrady installed"
+else
+  go get -u github.com/golang/lint/golint
+fi
+
+if [ "$TRAVIS" != "true"]; then
+  if which gem > /dev/null; then
+    gem install github_changelog_generator --no-ri --no-rdoc
+  else
+    echo "gem comand not found, skipping installation of github_changelog_generator"
+  fi
+fi
+
+# vim: set ft=sh

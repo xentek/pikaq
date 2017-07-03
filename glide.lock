@@ -1,0 +1,28 @@
+hash: 721a5b0619e06e5352d955b4d76da10df4d3386d116be9f18600323cdc0f28dd
+updated: 2017-07-03T12:05:37.522116381-05:00
+imports:
+- name: github.com/google/uuid
+  version: 064e2069ce9c359c118179501254f67d7d37ba24
+- name: github.com/sirupsen/logrus
+  version: 202f25545ea4cf9b191ff7f846df5d87c9382c2b
+- name: github.com/streadway/amqp
+  version: 27859d32540aebd2e5befa52dc59ae8e6a0132b6
+- name: golang.org/x/sys
+  version: 0e0164865330d5cf1c00247be08330bf96e2f87c
+  subpackages:
+  - unix
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert
+  - require
+  - suite
