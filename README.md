@@ -4,7 +4,7 @@
 
 #### __PikaQ, I choose YOU!__
 
-PikaQ makes working with Rabbit MQ _even_ easier. It provides a thin layer around [streadway/amqp](https://github.com/streadway/amqp), the defacto standard golang library for publishing and consuming Rabbit MQ messages. This package makes writing your own high performance message-based servcies fun and type safe.
+PikaQ makes working with Rabbit MQ _even_ easier. It provides a thin layer around [streadway/amqp](https://github.com/streadway/amqp), the defacto standard golang library for publishing and consuming Rabbit MQ messages. This package makes writing your own high performance message-based services fun and type safe.
 
 > The name "pika" is used for any member of the Ochotonidae, a family within the order of lagomorphs, which also includes the Leporidae (rabbits and hares).
 > __-- [Wikipedia](https://en.wikipedia.org/wiki/Pika)__
