@@ -8,14 +8,14 @@
 # Example: ./scripts/release v0.0.0 "Release Notes Message ..."
 
 set -ex
-git tag -s ${1} -m "${2}"
+rm -f .git/RELEASE_EDITMSG
+touch .git/RELEASE_EDITMSG
+echo "${1}\n\n${@}" >> .git/RELEASE_EDITMSG
+git tag -s ${1} -F .git/RELEASE_EDITMSG
 git push --tags
 github_changelog_generator --issue-line-labels="ALL" --release-url="https://github.com/macandmia/pikaq/releases/tag/%s"
 git commit CHANGELOG.md -m "updates changelog for ${1}"
 git push origin master
-rm -f .git/RELEASE_EDITMSG
-touch .git/RELEASE_EDITMSG
-echo "${1}\n\n${2}" >> .git/RELEASE_EDITMSG
 hub release create -f .git/RELEASE_EDITMSG ${1}
 
 # vim: set ft=sh
