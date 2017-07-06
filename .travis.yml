@@ -2,6 +2,8 @@ dist: trusty
 language: go
 go:
 - 1.8
+services:
+  - rabbitmq
 before_install:
 - "./scripts/setup"
 - go get github.com/mattn/goveralls
