@@ -37,6 +37,7 @@ func (suite *PikaqTestSuite) SetupTest() {
 	suite.TestConsumer = &Consumer{tag: suite.TestConsumerTag}
 	suite.TestMessageHandler = func(msgs Messages, done chan error) { done <- nil }
 	suite.TestSession, _ = NewSession(suite.MQ_URL)
+	_, _ = DeclareExchange(suite.TestSession, suite.TestExchangeName, suite.TestExchangeType)
 	_, suite.TestQueue, _ = DeclareQueue(suite.TestSession, suite.TestQueueName)
 }
 
