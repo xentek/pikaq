@@ -1,16 +1,13 @@
 dist: trusty
 language: go
 go:
-- 1.8
+    - 1.8
 services:
-  - rabbitmq
-before_install:
-- "./scripts/setup"
-- go get github.com/mattn/goveralls
+    - rabbitmq
+before_install: make setup
 install: make install
-script:
-- make ci
+script: make ci
 notifications:
-  email:
-    on_success: never
-    on_failure: always
+    email:
+        on_success: never
+        on_failure: always
