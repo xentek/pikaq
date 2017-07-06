@@ -1,0 +1,14 @@
+dist: trusty
+language: go
+go:
+- 1.8
+before_install:
+- "./scripts/setup"
+- go get github.com/mattn/goveralls
+install: make install
+script:
+- make ci
+notifications:
+  email:
+    on_success: never
+    on_failure: always

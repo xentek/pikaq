@@ -1,4 +1,4 @@
-.PHONY: setup install upgrade test release
+.PHONY: setup install upgrade test release ci
 
 %:
 	@:
@@ -18,6 +18,9 @@ upgrade:
 # test package
 test:
 	go test $(glide nv)
+
+ci: test
+	${HOME}/gopath/bin/goveralls -service=travis-ci
 
 # release package
 release:
