@@ -15,7 +15,13 @@ else
   go get -u github.com/golang/lint/golint
 fi
 
-if [ "$TRAVIS" != "true"]; then
+if which goveralls > /dev/null; then
+  echo "goveralls alrady installed"
+else
+  go get -u github.com/mattn/goveralls
+fi
+
+if [ "$TRAVIS" != "true" ]; then
   if which gem > /dev/null; then
     gem install github_changelog_generator --no-ri --no-rdoc
   else
