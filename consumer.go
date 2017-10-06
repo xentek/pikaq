@@ -98,3 +98,7 @@ func (c *Consumer) Stop() error {
 	// wait for handle() to exit
 	return <-c.done
 }
+
+func (c *Consumer) Info() string {
+	return c.tag.Tag()
+}
