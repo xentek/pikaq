@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.0.3](https://github.com/macandmia/pikaq/releases/tag/v0.0.3) (2017-10-18)
+[Full Changelog](https://github.com/macandmia/pikaq/compare/v0.0.2...v0.0.3)
+
 ## [v0.0.2](https://github.com/macandmia/pikaq/releases/tag/v0.0.2) (2017-10-06)
 [Full Changelog](https://github.com/macandmia/pikaq/compare/v0.0.1...v0.0.2)
 
