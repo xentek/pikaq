@@ -63,6 +63,12 @@ func (c *Consumer) Start() (Messages, error) {
 		err  error
 	)
 
+	c.session.channel.Qos(
+		2,    // number of messages to send
+		0,    // number of bytes to send (0 = no limit)
+		true, // settings apply to all consumers on this channel
+	)
+
 	msgs, err = c.session.channel.Consume(
 		c.queue.Name, // name
 		c.tag.Tag(),  // consumerTag,
