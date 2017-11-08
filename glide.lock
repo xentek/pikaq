@@ -1,16 +1,21 @@
-hash: 721a5b0619e06e5352d955b4d76da10df4d3386d116be9f18600323cdc0f28dd
-updated: 2017-07-03T12:05:37.522116381-05:00
+hash: 4b192e7e447618b374e6e3c4524782f45b3171f161933f92957d08c993920ee5
+updated: 2017-11-08T13:38:18.127088-06:00
 imports:
 - name: github.com/google/uuid
   version: 064e2069ce9c359c118179501254f67d7d37ba24
 - name: github.com/sirupsen/logrus
-  version: 202f25545ea4cf9b191ff7f846df5d87c9382c2b
+  version: f006c2ac4710855cf0f916dd6b77acf6b048dc6e
 - name: github.com/streadway/amqp
-  version: 27859d32540aebd2e5befa52dc59ae8e6a0132b6
+  version: 7db842394ca79f338f781d47bc59115f44adb20b
+- name: golang.org/x/crypto
+  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
+  subpackages:
+  - ssh/terminal
 - name: golang.org/x/sys
-  version: 0e0164865330d5cf1c00247be08330bf96e2f87c
+  version: 314a259e304ff91bd6985da2a7149bbf91237993
   subpackages:
   - unix
+  - windows
 testImports:
 - name: github.com/davecgh/go-spew
   version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
