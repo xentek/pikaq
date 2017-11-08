@@ -1,4 +1,4 @@
-# pikaq [![Build Status](https://travis-ci.org/macandmia/pikaq.svg?branch=master)](https://travis-ci.org/macandmia/pikaq) [![GoDoc](https://godoc.org/github.com/macandmia/pikaq?status.svg)](https://godoc.org/github.com/macandmia/pikaq) [![Go Report Card](https://goreportcard.com/badge/github.com/macandmia/pikaq)](https://goreportcard.com/report/github.com/macandmia/pikaq) [![Coverage Status](https://coveralls.io/repos/github/macandmia/pikaq/badge.svg)](https://coveralls.io/github/macandmia/pikaq) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/macandmia/pikaq/blob/master/LICENSE) 
+# pikaq [![Build Status](https://travis-ci.org/xentek/pikaq.svg?branch=master)](https://travis-ci.org/xentek/pikaq) [![GoDoc](https://godoc.org/github.com/xentek/pikaq?status.svg)](https://godoc.org/github.com/xentek/pikaq) [![Go Report Card](https://goreportcard.com/badge/github.com/xentek/pikaq)](https://goreportcard.com/report/github.com/xentek/pikaq) [![Coverage Status](https://coveralls.io/repos/github/xentek/pikaq/badge.svg)](https://coveralls.io/github/xentek/pikaq) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xentek/pikaq/blob/master/LICENSE) 
 
 ![PikaQ, I choose you!](http://xentek-images.s3.amazonaws.com/pikachu-and-ash.png "PikaQ, I choose you!")
 
@@ -13,7 +13,7 @@ PikaQ makes working with Rabbit MQ _even_ easier. It provides a thin layer aroun
 
 ## Install
 
-    go get https://github.com/macandmia/pikaq
+    go get https://github.com/xentek/pikaq
 
 ## Import
 
@@ -31,7 +31,7 @@ package main
 import (
 	"log"
 
-	"github.com/macandmia/pikaq"
+	"github.com/xentek/pikaq"
 )
 
 func main() {
@@ -48,6 +48,6 @@ Refer to our [Contributor's Guide](CONTRIBUTING.md) to learn how you can partici
 
 ## More Info
 
-  - [GoDoc](https://godoc.org/github.com/macandmia/pikaq)
-  - [Wiki](https://github.com/macandmia/pikaq/wiki)
+  - [GoDoc](https://godoc.org/github.com/xentek/pikaq)
+  - [Wiki](https://github.com/xentek/pikaq/wiki)
   - [Examples](_examples)
