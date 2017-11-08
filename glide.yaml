@@ -1,4 +1,4 @@
-package: github.com/macandmia/pikaq
+package: github.com/xentek/pikaq
 import:
 - package: github.com/streadway/amqp
 - package: github.com/google/uuid

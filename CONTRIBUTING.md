@@ -7,15 +7,15 @@ We welcome and encourage contibutions (no matter how big or small) from **everyo
 ## Ways You Can Contribute
 
   - [Submit a Pull Request](#pull-requests) :octocat: :shipit:
-  - [Edit the Wiki](https://github.com/macandmia/pikaq/wiki) :pencil:
-  - [Report a Bug](https://github.com/macandmia/pikaq/issues/new?labels=bug) :beetle:
-  - [Suggest a Feature](https://github.com/macandmia/pikaq/issues/new?labels=enhancement) :bulb:
-  - [Tell us](mailto:eng@macandmia.com) about a project you used this in. :mailbox_with_mail:
+  - [Edit the Wiki](https://github.com/xentek/pikaq/wiki) :pencil:
+  - [Report a Bug](https://github.com/xentek/pikaq/issues/new?labels=bug) :beetle:
+  - [Suggest a Feature](https://github.com/xentek/pikaq/issues/new?labels=enhancement) :bulb:
+  - [Tell us](mailto:eng@xentek.com) about a project you used this in. :mailbox_with_mail:
   - Write about us on your blog or social media! :mega:
 
 ## Pull Requests
 
-1. [Fork the repo](https://github.com/macandmia/pikaq#fork-destination-box)
+1. [Fork the repo](https://github.com/xentek/pikaq#fork-destination-box)
 
 2. Clone your fork:
 
@@ -37,7 +37,7 @@ We welcome and encourage contibutions (no matter how big or small) from **everyo
 
     ./scripts/test
 
-7. Commit your changes (squash your commits, if needed), push your fork, and [submit a pull request](https://github.com/macandmia/pikaq/compare/)
+7. Commit your changes (squash your commits, if needed), push your fork, and [submit a pull request](https://github.com/xentek/pikaq/compare/)
 
 At this point you're waiting on us. We will try to review your submissions within three days -- typically sooner than that. We may suggest some changes, improvements or alternative approaches -- please be open to feedback, as we have to consider how your change fits into the over all design and vision of the project.
 

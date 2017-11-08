@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/macandmia/pikaq"
+	"github.com/xentek/pikaq"
 )
 
 func ExampleMessageHandler(msgs Messages, done chan error) {
