@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-set -exo pipefail
+set -ex
 
 # This script assumes you already have a proper go environment set up.
 
