@@ -1,23 +1,19 @@
-.PHONY: setup install upgrade test release ci
+.PHONY: setup install test release ci
 
 %:
 	@:
 
 # setup project
 setup:
-	scripts/setup
+	@ scripts/setup
 
 # install deps
 install:
-	glide install
-
-# upgrade deps
-upgrade:
-	glide up
+	@ go mod vendor
 
 # test package
 test:
-	go test $(glide nv)
+	go test ./...
 
 ci: test
 	${HOME}/gopath/bin/goveralls -service=travis-ci

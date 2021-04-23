@@ -13,7 +13,7 @@ touch .git/RELEASE_EDITMSG
 echo "${1}\n\n${@}" >> .git/RELEASE_EDITMSG
 git tag -s ${1} -F .git/RELEASE_EDITMSG
 git push --tags
-github_changelog_generator --issue-line-labels="ALL" --release-url="https://github.com/xentek/pikaq/releases/tag/%s"
+github_changelog_generator --user xentek --project pikaq --issue-line-labels="ALL" --release-url="https://github.com/xentek/pikaq/releases/tag/%s"
 git commit CHANGELOG.md -m "updates changelog for ${1}"
 git push origin master
 hub release create -f .git/RELEASE_EDITMSG ${1}
