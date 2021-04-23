@@ -15,12 +15,4 @@ else
   go get -u github.com/mattn/goveralls
 fi
 
-if [ "$TRAVIS" != "true" ]; then
-  if which gem > /dev/null; then
-    gem install github_changelog_generator --no-doc
-  else
-    echo "gem comand not found, skipping installation of github_changelog_generator"
-  fi
-fi
-
 # vim: set ft=sh
