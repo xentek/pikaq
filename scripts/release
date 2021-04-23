@@ -14,6 +14,6 @@ echo "${1}\n\n${@}" >> .git/RELEASE_EDITMSG
 git tag -s ${1} -F .git/RELEASE_EDITMSG
 git push --tags
 git push origin master
-hub release create -f .git/RELEASE_EDITMSG ${1}
+hub release create -F .git/RELEASE_EDITMSG ${1}
 
 # vim: set ft=sh
