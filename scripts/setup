@@ -6,7 +6,7 @@ set -ex
 if which golint > /dev/null; then
   echo "golint alrady installed"
 else
-  go get -u github.com/x/lint/golint
+  go get -u go get -u golang.org/x/lint/golint
 fi
 
 if which goveralls > /dev/null; then
