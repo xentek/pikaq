@@ -1,13 +1,13 @@
-dist: trusty
+dist: hirsute
 language: go
 go:
-    - 1.8
+  - 1.16
 services:
-    - rabbitmq
+  - rabbitmq
 before_install: make setup
 install: make install
 script: make ci
 notifications:
-    email:
-        on_success: never
-        on_failure: always
+  email:
+    on_success: never
+    on_failure: always

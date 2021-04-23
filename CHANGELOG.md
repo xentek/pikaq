@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.0.6](https://github.com/xentek/pikaq/releases/tag/v0.0.6) (2021-04-23)
+[Full Changelog](https://github.com/xentek/pikaq/compare/v0.0.5...v0.0.6)
+
 ## [v0.0.5](https://github.com/xentek/pikaq/releases/tag/v0.0.5) (2021-04-23)
 [Full Changelog](https://github.com/xentek/pikaq/compare/v0.0.4...v0.0.5)
 
