@@ -14,7 +14,7 @@ install:
 
 # test package
 test:
-	go test ./...
+	@ go test ./...
 
 # release package
 release: test
@@ -25,7 +25,6 @@ release: test
 		hub release create -m ${VERSION} -e ${VERSION}
 
 ci: test
-	${HOME}/gopath/bin/goveralls -service=travis-ci
 
 %:
 	@ true
