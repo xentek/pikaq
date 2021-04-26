@@ -1,10 +1,10 @@
-dist: hirsute
+dist: trusty
 language: go
 go:
   - 1.16
 services:
   - rabbitmq
-before_install: make setup
+before_install: make init
 install: make install
 script: make ci
 notifications:
