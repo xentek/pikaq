@@ -13,7 +13,7 @@ type Consumer struct {
 	done    chan error
 }
 
-func NewConsumer(url string, exchange string, exchangeType string, queue string, key string, name string, handler MessageHandler) (*Consumer, error) {
+func NewConsumer(url string, exchange string, exchangeType string, queue string, key string, name string, prefetch int, handler MessageHandler) (*Consumer, error) {
 	var err error
 	tag := NewConsumerTag(name)
 
@@ -47,7 +47,7 @@ func NewConsumer(url string, exchange string, exchangeType string, queue string,
 	}
 	log.WithFields(log.Fields{"consumer": tag.Tag(), "queue": queue, "total_messages": c.queue.Messages, "total_consumers": c.queue.Consumers, "exchange": exchange, "exchange_type": exchangeType, "routing_key": key}).Info("Queue Bound To Exchange.")
 
-	msgs, err := c.Start()
+	msgs, err := c.Start(prefetch)
 	if err != nil {
 		log.WithFields(log.Fields{"consumer": tag.Tag()}).Error(err)
 		return nil, err
@@ -57,16 +57,16 @@ func NewConsumer(url string, exchange string, exchangeType string, queue string,
 	return c, err
 }
 
-func (c *Consumer) Start() (Messages, error) {
+func (c *Consumer) Start(prefetch int) (Messages, error) {
 	var (
 		msgs Messages
 		err  error
 	)
 
 	c.session.channel.Qos(
-		2,    // number of messages to send
-		0,    // number of bytes to send (0 = no limit)
-		true, // settings apply to all consumers on this channel
+		prefetch, // number of messages to send
+		0,        // number of bytes to send (0 = no limit)
+		true,     // settings apply to all consumers on this channel
 	)
 
 	msgs, err = c.session.channel.Consume(
