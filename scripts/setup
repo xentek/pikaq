@@ -9,10 +9,4 @@ else
   go get -u golang.org/x/lint/golint
 fi
 
-if which goveralls > /dev/null; then
-  echo "goveralls alrady installed"
-else
-  go get -u github.com/mattn/goveralls
-fi
-
 # vim: set ft=sh

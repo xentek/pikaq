@@ -1,4 +1,4 @@
-# pikaq [![Build Status](https://travis-ci.org/xentek/pikaq.svg?branch=master)](https://travis-ci.org/xentek/pikaq) [![GoDoc](https://godoc.org/github.com/xentek/pikaq?status.svg)](https://godoc.org/github.com/xentek/pikaq) [![Go Report Card](https://goreportcard.com/badge/github.com/xentek/pikaq)](https://goreportcard.com/report/github.com/xentek/pikaq) [![Coverage Status](https://coveralls.io/repos/github/xentek/pikaq/badge.svg)](https://coveralls.io/github/xentek/pikaq) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xentek/pikaq/blob/master/LICENSE) 
+# pikaq [![Build Status](https://travis-ci.org/xentek/pikaq.svg?branch=master)](https://travis-ci.org/xentek/pikaq) [![GoDoc](https://godoc.org/github.com/xentek/pikaq?status.svg)](https://godoc.org/github.com/xentek/pikaq) [![Go Report Card](https://goreportcard.com/badge/github.com/xentek/pikaq)](https://goreportcard.com/report/github.com/xentek/pikaq) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xentek/pikaq/blob/master/LICENSE) 
 
 ![PikaQ, I choose you!](http://xentek-images.s3.amazonaws.com/pikachu-and-ash.png "PikaQ, I choose you!")
 
@@ -17,7 +17,7 @@ PikaQ makes working with Rabbit MQ _even_ easier. It provides a thin layer aroun
 
 ## Import
 
-    import "github.com/hyperdriven/hyperdrive"
+    import "github.com/xentek/pikaq"
 
 ## Usage
 
