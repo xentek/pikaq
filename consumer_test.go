@@ -5,7 +5,7 @@ func (suite *PikaqTestSuite) TestConsumerType() {
 }
 
 func (suite *PikaqTestSuite) TestNewConsumer() {
-	c, err := NewConsumer(suite.MQ_URL, suite.TestExchangeName, suite.TestExchangeType, suite.TestQueueName, suite.TestRoutingKey, suite.TestConsumerName, suite.TestMessageHandler)
+	c, err := NewConsumer(suite.MQ_URL, suite.TestExchangeName, suite.TestExchangeType, suite.TestQueueName, suite.TestRoutingKey, suite.TestConsumerName, suite.TestConsumerPrefetch, suite.TestMessageHandler)
 	suite.NotNil(c)
 	if suite.NoError(err) {
 		suite.IsType(&Consumer{}, c, "expects an instance of Consumer")

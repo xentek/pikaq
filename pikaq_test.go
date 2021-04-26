@@ -10,18 +10,19 @@ import (
 
 type PikaqTestSuite struct {
 	suite.Suite
-	MQ_URL             string
-	TestConsumer       *Consumer
-	TestMessageHandler MessageHandler
-	TestConsumerTag    *ConsumerTag
-	TestUUID           uuid.UUID
-	TestSession        *Session
-	TestQueue          Queue
-	TestExchangeName   string
-	TestExchangeType   string
-	TestQueueName      string
-	TestRoutingKey     string
-	TestConsumerName   string
+	MQ_URL               string
+	TestConsumer         *Consumer
+	TestMessageHandler   MessageHandler
+	TestConsumerTag      *ConsumerTag
+	TestUUID             uuid.UUID
+	TestSession          *Session
+	TestQueue            Queue
+	TestExchangeName     string
+	TestExchangeType     string
+	TestQueueName        string
+	TestRoutingKey       string
+	TestConsumerName     string
+	TestConsumerPrefetch int
 }
 
 func (suite *PikaqTestSuite) SetupTest() {
@@ -32,6 +33,7 @@ func (suite *PikaqTestSuite) SetupTest() {
 	suite.TestQueueName = "test"
 	suite.TestRoutingKey = "test"
 	suite.TestConsumerName = "test"
+	suite.TestConsumerPrefetch = 2
 	suite.TestUUID = uuid.New()
 	suite.TestConsumerTag = &ConsumerTag{name: suite.TestConsumerName, id: suite.TestUUID}
 	suite.TestConsumer = &Consumer{tag: suite.TestConsumerTag}
